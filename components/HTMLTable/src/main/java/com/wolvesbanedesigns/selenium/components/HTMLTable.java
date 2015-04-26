@@ -1,13 +1,10 @@
 package com.wolvesbanedesigns.selenium.components;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.Dimension;
@@ -81,7 +78,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#clear()
 	 */
-	@Override
 	public void clear() {
 		webDriver.findElement(tblLocator).clear();
 	}
@@ -91,7 +87,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#click()
 	 */
-	@Override
 	public void click() {
 		webDriver.findElement(tblLocator).click();
 
@@ -102,7 +97,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#findElement(org.openqa.selenium.By)
 	 */
-	@Override
 	public WebElement findElement(By by) {
 		WebElement webTable = null;
 
@@ -122,7 +116,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#findElements(org.openqa.selenium.By)
 	 */
-	@Override
 	public List<WebElement> findElements(By by) {
 		List<WebElement> items = new ArrayList<>();
 		items = webDriver.findElement(tblLocator).findElements(by);
@@ -134,7 +127,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#getAttribute(java.lang.String)
 	 */
-	@Override
 	public String getAttribute(String name) {
 		return webDriver.findElement(tblLocator).getAttribute(name);
 	}
@@ -144,7 +136,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#getCssValue(java.lang.String)
 	 */
-	@Override
 	public String getCssValue(String propertyName) {
 		return webDriver.findElement(tblLocator).getCssValue(propertyName);
 	}
@@ -154,7 +145,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#getLocation()
 	 */
-	@Override
 	public Point getLocation() {
 		return webDriver.findElement(tblLocator).getLocation();
 	}
@@ -164,7 +154,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#getSize()
 	 */
-	@Override
 	public Dimension getSize() {
 		return webDriver.findElement(tblLocator).getSize();
 	}
@@ -174,7 +163,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#getTagName()
 	 */
-	@Override
 	public String getTagName() {
 		return webDriver.findElement(tblLocator).getTagName();
 	}
@@ -184,7 +172,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#getText()
 	 */
-	@Override
 	public String getText() {
 		return webDriver.findElement(tblLocator).getText();
 	}
@@ -194,7 +181,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#isDisplayed()
 	 */
-	@Override
 	public boolean isDisplayed() {
 		return webDriver.findElement(tblLocator).isDisplayed();
 	}
@@ -204,7 +190,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#isEnabled()
 	 */
-	@Override
 	public boolean isEnabled() {
 		return webDriver.findElement(tblLocator).isEnabled();
 	}
@@ -214,7 +199,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#isSelected()
 	 */
-	@Override
 	public boolean isSelected() {
 		return webDriver.findElement(tblLocator).isSelected();
 	}
@@ -224,7 +208,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#sendKeys(java.lang.CharSequence[])
 	 */
-	@Override
 	public void sendKeys(CharSequence... keysToSend) {
 		webDriver.findElement(tblLocator).sendKeys(keysToSend);
 	}
@@ -234,7 +217,6 @@ public class HTMLTable implements WebElement {
 	 * 
 	 * @see org.openqa.selenium.WebElement#submit()
 	 */
-	@Override
 	public void submit() {
 		webDriver.findElement(tblLocator).submit();
 	}
